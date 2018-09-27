@@ -11,13 +11,20 @@
 
 			.super-cell-background {background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_support_find_4.png') no-repeat;}
 			/* .super-cell-background:before {content: ' ';position: fixed;z-index: -1;top: 0;right: 0;bottom: 0;left: 0;background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_support_find_4.png') center 0 no-repeat;} */
+			.container {position: absolute;top: 50px;left: 0;right: 0;}
 			.clash-royale {background-position: -36px 0;width: 230px;height: 355px;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
 			.boom-beach {background-position: -345px 0;width: 247px;height: 355px;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
 			.clash-of-clans {background-position: -638px 0;width: 286px;height: 355px;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
 			.hay-day {background-position: -1019px 0;width: 156px;height: 355px;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
-			.section-detail {font-family: 'Whitney SSm A','Whitney SSm B',sans-serif;text-align: center;margin-top: 100px;}
+			.section-detail {font-family: 'Comic Sans MS',sans-serif;text-align: center;margin-top: 100px;}
 			.section-detail h2 {font-weight: bold;margin: 0;}
 			.section-detail p {margin: 15px;}
+
+			#searchBox {background-color: rgba(0, 0, 0, 0.3)}
+			.searchBox {z-index: 9;}
+
+			.img-box {height: 100%;width: 100%;}
+			.img-box img {max-width: 100%;min-height: 100%;}
 		</style>
 		<title>bs</title>
 	</head>
@@ -55,9 +62,32 @@
 				</div>
 			</div>
 		</nav>
-		<div id="searchBox" class="container-fluid">
-			<div class="container swiper-container">
-				<div class="row clearfix">
+		<div id="searchBox" class="swiper-container">
+			<div class="swiper-wrapper">
+      			<div class="swiper-slide">
+      				<div class="img-box">
+      					<img src="https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_glnd_cr_art.jpg" alt="">
+      				</div>
+      			</div>
+      			<div class="swiper-slide">
+      				<div class="img-box">
+      					<img src="https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_glnd_bb1506_art.jpg" alt="">
+      				</div>
+      			</div>
+      			<div class="swiper-slide">
+      				<div class="img-box">
+      					<img src="https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_glnd_coc1512_art.jpg" alt="">
+      				</div>
+      			</div>
+      			<div class="swiper-slide">
+      				<div class="img-box">
+      					<img src="https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_glnd_hayday_art.jpg" alt="">
+      				</div>
+      			</div>
+      		</div>
+      		<div class="swiper-pagination"></div>
+			<div class="container">
+				<div class="row clearfix searchBox">
 					<div class="col-md-2 column"></div>
 					<div class="col-md-8 column text-center mr100">
 						<h1>COC</h1>
@@ -74,16 +104,10 @@
 		                    </div>
 
 						</form>
-						
+
 					</div>
 					<div class="col-md-2 column"></div>
 				</div>
-			</div>
-			<div class="swiper-wrapper">
-      			<div class="swiper-slide">Slide 1</div>
-      			<div class="swiper-slide">Slide 1</div>
-      			<div class="swiper-slide">Slide 1</div>
-      			<div class="swiper-slide">Slide 1</div>
       		</div>
 		</div>
 		<div id="section41" class="container-fluid col-xs-12 col-md-6 col-lg-3">
@@ -126,16 +150,9 @@
 			</div>
 			<div class="super-cell-background hay-day"></div>
 		</div>
-		<!--<script data-main="js/common/require-config" src="js/common/require.js"></script>-->
-		<script src="js/common/require.js"></script>
+		<!-- <script data-main="js/common/require-config" src="js/common/require.js"></script> -->
+		<script src="js/common/require.js" data-main="require-config"></script>
 		<script src="js/page/index.js" type="text/javascript"></script>
 		
 	</body>
 </html>
-<script type="text/javascript">
-	// var swiper = new Swiper('.swiper-container', {
- //      pagination: {
- //        el: '.swiper-pagination',
- //      },
- //    });
-</script>

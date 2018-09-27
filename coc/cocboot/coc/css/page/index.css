@@ -14,8 +14,9 @@ html {
 	padding-top: 50px;
 	position: relative;
 	height: 100%;
-	background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_clashofclans_character.png') no-repeat;
+	/* background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_clashofclans_character.png') no-repeat; */
 	background-position: center;
+	z-index: 99;
 }
 
 
@@ -109,12 +110,8 @@ html {
 }
 .mr100{
 	margin: 100px auto;
+	z-index: 99;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 8px #000000;
 }
 
-#searchbtn{
-	background-image: url(../../img/search (2).png);
-	width: 32px;
-	/*设置图片显示的宽*/
-	height: 32px;
-	/*图片显示的高*/
-}

@@ -3,7 +3,7 @@ require.config({
 	paths:{
 		"jquery":"jquery",
 		"bootstrap":"bootstrap",
-		"swiper":"swiper.min"
+		"swiper":"swiper"
 	},
 	map:{
 		'*':{
@@ -17,12 +17,28 @@ require.config({
 		bootstrap:{
 	      	deps:['jquery']
 	    },
-	    swiper: {
-	    	exports: 'swiper'
+	    swiper:{
+	      	deps:['jquery']
 	    }
 	}
 });
 
-require(["jquery","bootstrap"],function($){
+require(["jquery","swiper"],function($,Swiper){
 	console.log('require加载完毕')
+	var swiper = new Swiper('.swiper-container', {
+		width: window.innerWidth,
+		loop: true,
+		effect : 'flip',
+		autoplay: {
+    		delay: 2000,
+		    stopOnLastSlide: false,
+		    disableOnInteraction: true,
+	    },
+	    pagination: {
+	    	el: '.swiper-pagination',
+	    	type: 'bullets',
+	    }
+    });
 })
+
+
