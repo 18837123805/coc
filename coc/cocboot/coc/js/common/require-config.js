@@ -24,11 +24,9 @@ require.config({
 });
 
 require(["jquery","swiper"],function($,Swiper){
-	console.log('require加载完毕')
 	var swiper = new Swiper('.swiper-container', {
 		width: window.innerWidth,
 		loop: true,
-		effect : 'flip',
 		autoplay: {
     		delay: 2000,
 		    stopOnLastSlide: false,
