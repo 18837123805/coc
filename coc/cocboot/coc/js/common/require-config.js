@@ -45,7 +45,6 @@ require(["jquery","swiper","iscroll","demoUtils"],function($,Swiper,IScroll){
 	    });
 	    var myScroll = new IScroll('#wrapper', {
 	    	mouseWheel: true,
-	    	scrollbars: true,
 			scrollX: true,
 			scrollY: true,
 			momentum: true,

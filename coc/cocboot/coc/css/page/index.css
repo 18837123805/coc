@@ -11,7 +11,7 @@ html {
 }
 
 #searchBox {
-	padding-top: 50px;
+	/* padding-top: 50px; */
 	position: relative;
 	/* height: 100%; */
 	/* background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_clashofclans_character.png') no-repeat; */
@@ -101,7 +101,7 @@ html {
 	margin: 0;
 }
 .mr100{
-	margin: 100px auto;
+	margin: 80px auto;
 	z-index: 99;
 	color: #FFFFFF;
 	text-shadow: 2px 2px 8px #000000;
