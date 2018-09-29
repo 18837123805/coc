@@ -48,7 +48,16 @@ require(["jquery","swiper","iscroll","demoUtils"],function($,Swiper,IScroll){
 			scrollX: true,
 			scrollY: true,
 			momentum: true,
-			snap: true
+			snap: true,
+			// mouseWheel: true,//允许鼠标滚动
+			// scrollbars:true,//显示滚动条
+			bounce:true,//反弹动画
+			click:true,//允许容器内元素能绑定点击事件
+			// disableMouse: true,//禁用鼠标
+			// scrollX:true,//横向可以用
+			// scrollY:true,//纵向可以使用
+			startX:0,//X方向滚动的起始位置
+			startY:0//X方向滚动的起始位置
 			// bounceEasing: 'elastic',
 			// bounceTime: 1200,
 			// freeScroll: true
