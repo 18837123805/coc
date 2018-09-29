@@ -13,43 +13,35 @@ html {
 #searchBox {
 	padding-top: 50px;
 	position: relative;
-	height: 100%;
+	/* height: 100%; */
 	/* background: url('https://cdn.supercell.com/supercell.com/180910214427/all/themes/supercell/img/bg_clashofclans_character.png') no-repeat; */
-	background-position: center;
+	/* background-position: center; */
 	z-index: 99;
 }
 
 
 #section41 {
-	/* padding-top: 50px; */
-	height: 500px;
 	color: #fff;
 	background-color: #00bcd4;
-	height: 100%;
+	height: 100vh;
 }
 
 #section42 {
-	/* padding-top: 50px; */
-	height: 500px;
 	color: #fff;
 	background-color: #009688;
-	height: 100%;
+	height: 100vh;
 }
 
 #section43 {
-	/* padding-top: 50px; */
-	height: 500px;
 	color: #fff;
 	background-color: #E2724D;
-	height: 100%;
+	height: 100vh;
 }
 
 #section44 {
-	/* padding-top: 50px; */
-	height: 500px;
 	color: #fff;
 	background-color: #D65863;
-	height: 100%;
+	height: 100vh;
 }
 
 /*.search-box {
