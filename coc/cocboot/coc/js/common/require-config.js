@@ -33,11 +33,11 @@ require(["jquery","swiper","iscroll","demoUtils"],function($,Swiper,IScroll){
 		var swiper = new Swiper('.swiper-container', {
 			width: window.innerWidth,
 			loop: true,
-			autoplay: {
-	    		delay: 2000,
-			    stopOnLastSlide: false,
-			    disableOnInteraction: true,
-		    },
+			// autoplay: {
+	  //   		delay: 2000,
+			//     stopOnLastSlide: false,
+			//     disableOnInteraction: true,
+		 //    },
 		    pagination: {
 		    	el: '.swiper-pagination',
 		    	type: 'bullets',
