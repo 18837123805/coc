@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- initial-scale=1.0 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。
+		在移动设备浏览器上，通过为 viewport meta 标签添加 user-scalable=no 可以禁用其缩放（zooming）功能。
+		通常情况下，maximum-scale=1.0 与 user-scalable=no 一起使用。这样禁用缩放功能后，用户只能滚动屏幕，就能让您的网站看上去更像原生应用的感觉。 -->
+	<!-- 注意，这种方式我们并不推荐所有网站使用，还是要看您自己的情况而定！ -->
+	<!-- <meta name="viewport" content="width=device-width, 
+                                     initial-scale=1.0, 
+                                     maximum-scale=1.0, 
+                                     user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.container {
+            margin: 10px auto;
+            padding: 10px;
+        	border-radius: 6px;
+        	border: 2px solid #286090;
+    	}
+	</style>
+</head>
+<body>
+	<!-- 响应式图片 -->
+	<div class="container">
+		<p>响应式图片</p>
+		<p>通过:img-responsive类选择器来控制图片响应式</p>
+		<p class="">display: block; height: auto; max-width: 100%;</p>
+		<img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=27ac483e40a7d933bfa8e3759570b62e/5882b2b7d0a20cf419b28cf574094b36acaf99fd.jpg" class="img-responsive" alt="">
+	</div>
+	
+	<!-- 响应式表格 -->
+	<div class="container">
+		<p>响应式表格</p>
+		<p>通过：table-responsive来控制表格响应式</p>
+		<div class="table-responsive">
+		  <table class="table">
+		    <caption>响应式表格布局</caption>
+		    <thead>
+		      <tr>
+		        <th>产品</th>
+		        <th>付款日期</th>
+		        <th>状态</th></tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>产品1</td>
+		        <td>23/11/2013</td>
+		        <td>待发货</td></tr>
+		      <tr>
+		        <td>产品2</td>
+		        <td>10/11/2013</td>
+		        <td>发货中</td></tr>
+		      <tr>
+		        <td>产品3</td>
+		        <td>20/10/2013</td>
+		        <td>待确认</td></tr>
+		      <tr>
+		        <td>产品4</td>
+		        <td>20/10/2013</td>
+		        <td>已退货</td></tr>
+		    </tbody>
+		  </table>
+		</div>
+	</div>
+
+	<!-- 表单 -->
+	<div class="container">
+		<p>垂直/基本表单</p>
+		<form role="form">
+		  <div class="form-group">
+		    <label for="name">名称</label>
+		    <input type="text" class="form-control" id="name" placeholder="请输入名称">
+		  </div>
+		  <div class="form-group">
+		    <label for="inputfile">文件输入</label>
+		    <input type="file" id="inputfile">
+		    <p class="help-block">这里是块级帮助文本的实例。</p>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox">请打勾
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">提交</button>
+		</form>
+
+		<p>内联表单</p>
+		<form class="form-inline" role="form">
+		  <div class="form-group">
+		    <label class="sr-only" for="name">名称</label>
+		    <input type="text" class="form-control" id="name" placeholder="请输入名称">
+		  </div>
+		  <div class="form-group">
+		    <label class="sr-only" for="inputfile">文件输入</label>
+		    <input type="file" id="inputfile">
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox">请打勾
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">提交</button>
+		</form>
+
+		<p>水平表单</p>
+		<form class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label for="firstname" class="col-sm-2 control-label">名字</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="firstname" placeholder="请输入名字">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="lastname" class="col-sm-2 control-label">姓</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <div class="checkbox">
+		        <label>
+		          <input type="checkbox">请记住我
+		        </label>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-default">登录</button>
+		    </div>
+		  </div>
+		</form>
+
+		<p>选择框</p>
+		<form role="form">
+		  <div class="form-group">
+		    <label for="name">选择列表</label>
+		    <select class="form-control">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		    <label for="name">可多选的选择列表</label>
+		    <select multiple class="form-control">
+		      <option>1</option>
+		      <option>2</option>
+		      <option>3</option>
+		      <option>4</option>
+		      <option>5</option>
+		    </select>
+		  </div>
+		</form>
+
+		<p>验证状态</p>
+		<form class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label">聚焦</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" id="focusedInput" type="text" value="该输入框获得焦点...">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword" class="col-sm-2 control-label">禁用</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" id="disabledInput" type="text" placeholder="该输入框禁止输入..." disabled>
+		    </div>
+		  </div>
+		  <fieldset disabled>
+		    <div class="form-group">
+		      <label for="disabledTextInput" class="col-sm-2 control-label">禁用输入（Fieldset disabled）</label>
+		      <div class="col-sm-10">
+		        <input type="text" id="disabledTextInput" class="form-control" placeholder="禁止输入">
+		      </div>
+		    </div>
+		    <div class="form-group">
+		      <label for="disabledSelect" class="col-sm-2 control-label">禁用选择菜单（Fieldset disabled）</label>
+		      <div class="col-sm-10">
+		        <select id="disabledSelect" class="form-control">
+		          <option>禁止选择</option>
+		        </select>
+		      </div>
+		    </div>
+		  </fieldset>
+		  <div class="form-group has-success">
+		    <label class="col-sm-2 control-label" for="inputSuccess">输入成功</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputSuccess">
+		    </div>
+		  </div>
+		  <div class="form-group has-warning">
+		    <label class="col-sm-2 control-label" for="inputWarning">输入警告</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputWarning">
+		    </div>
+		  </div>
+		  <div class="form-group has-error">
+		    <label class="col-sm-2 control-label" for="inputError">输入错误</label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputError">
+		    </div>
+		  </div>
+		</form>
+
+		<p>表单帮助文本</p>
+		<form role="form">
+		  <span>帮助文本实例</span>
+		  <input class="form-control" type="text" placeholder="">
+		  <span class="help-block">一个较长的帮助文本块，超过一行，
+		  需要扩展到下一行。本实例中的帮助文本总共有两行。一个较长的帮助文本块，超过一行，
+		  需要扩展到下一行。本实例中的帮助文本总共有两行。一个较长的帮助文本块，超过一行，
+		  需要扩展到下一行。本实例中的帮助文本总共有两行。一个较长的帮助文本块，超过一行，
+		  需要扩展到下一行。本实例中的帮助文本总共有两行。一个较长的帮助文本块，超过一行，
+		  需要扩展到下一行。本实例中的帮助文本总共有两行。</span>
+		</form>
+	</div>
+
+	<div class="container">
+		<h3>辅助类</h3>
+		<h4>文本</h4>
+		<ul>
+			<li><p class="text-muted">"text-muted" 类的文本样式</p></li>
+			<li><p class="text-primary">"text-primary" 类的文本样式</p></li>
+			<li><p class="text-success">"text-success" 类的文本样式</p></li>
+			<li><p class="text-info">"text-info" 类的文本样式</p></li>
+			<li><p class="text-warning">"text-warning" 类的文本样式</p></li>
+			<li><p class="text-danger">"text-danger" 类的文本样式</p></li>
+			<li><p class="text-muted">"text-muted" 类的文本样式</p></li>
+		</ul>
+
+		<h4>背景</h4>
+		<ul>
+			<li><p class="bg-primary">表格单元格使用了 "bg-primary" 类</p></li>
+			<li><p class="bg-success">表格单元格使用了 "bg-success" 类</p></li>
+			<li><p class="bg-info">表格单元格使用了 "bg-info" 类</p></li>
+			<li><p class="bg-info">表格单元格使用了 "bg-info" 类</p></li>
+			<li><p class="bg-danger">表格单元格使用了 "bg-danger" 类</p></li>
+		</ul>
+
+		<h4>其他</h4>
+		<ul class="list-unstyled">
+			<li><p class="pull-left">元素浮动到左边</p></li>
+			<li><p class="clearfix"></p></li>
+			<li><p class="pull-right">元素浮动到右边</p></li>
+			<li><p class="clearfix"></p></li>
+		</ul>
+		<ul>
+			<li><p class="center-block" style="background: pink;">设置元素为 display:block 并居中显示</p></li>
+			<li><p class="show">强制显示已显示，强制隐藏已隐藏</p></li>
+			<li><p class="hidden">强制隐藏</p></li>
+			<li><p class="show">强制显示已显示，强制隐藏已隐藏</p></li>
+			<li>
+				<p> .sr-only 类除了屏幕阅读器外，其他设备上都隐藏元素:</p>
+				<a class="sr-only" href="#">跳转到主要内容</a>
+				<p>sr-only-focusable 与 .sr-only 类结合使用，在元素获取焦点时显示(如：键盘操作的用户):</p>
+				<a class="sr-only sr-only-focusable" href="#">跳转到主要内容</a>
+			</li>
+			<li>
+				<p>显示关闭按钮</p>
+				<button type="button" class="close">
+					<span>x</span>
+					<!-- <span aria-hidden="true">x</span>
+					<span class="sr-only">关闭</span> -->
+				</button>
+			</li>
+			<li>
+				<p> .caret 类显示了一个下拉的功能: <span class="caret"></span></p>
+				<p> .caret 类在按钮中使用：</p>
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">一个链接</a></li>
+						<li><a href="#">另一个链接 link</a></li>
+						<li><a href="#">其他功能</a></li>
+					</ul>
+				</div>        
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="js/common/require.js"></script>
+<script src="js/page/index.js" type="text/javascript"></script>

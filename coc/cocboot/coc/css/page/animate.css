@@ -1,0 +1,54 @@
+body {
+	position: relative;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+#animateBox {
+	padding-top: 150px;
+	position: relative;
+	height: 100%;
+}
+
+.search-box {
+	position: relative;
+}
+
+.icon-search {
+	position: absolute;
+	right: 0;
+	z-index:5;
+	margin: 7px 0;
+	background-image: url("../../img/search.png");
+	/*引入图片图片*/
+	background-repeat: no-repeat;
+	/*设置图片不重复*/
+	background-position: 0px 0px;
+	/*图片显示的位置*/
+	width: 32px;
+	/*设置图片显示的宽*/
+	height: 32px;
+	/*图片显示的高*/
+}
+
+.myKeyframes {
+	animation:goTop 5s infinite;
+	-moz-animation:goTop 5s infinite; /* Firefox */
+	-webkit-animation:goTop 5s infinite; /* Safari and Chrome */
+	-o-animation:goTop 5s infinite; /* Opera */
+}
+
+@keyframes goTop {
+	from {
+		/*padding-top: 0;*/
+		width: 100%;
+	}
+	to {
+		/*padding-top: 200px;*/
+		width: 0;
+	}
+}
+
